@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatToggleButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toggleButton"
+    style="@style/ToggleButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />

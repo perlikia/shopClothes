@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catalogRootFragment">
+
+    <fragment
+        android:id="@+id/catalogRootFragment"
+        android:name="com.example.shopclothes.presentation.screen.CatalogRootFragment"
+        android:label="CatalogRootFragment" >
+
+        <argument
+            android:name="categoryID"
+            app:argType="string"
+            android:defaultValue="@null" />
+
+        <action
+            android:id="@+id/action_categoryMove"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.shopclothes.presentation.screen.CategoryFragment"
+        android:label="CategoryFragment">
+
+        <argument
+            android:name="categoryID"
+            app:argType="string"
+            android:defaultValue="@null" />
+
+        <action
+            android:id="@+id/action_subCategoryMove"
+            app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_productsMove"
+            app:destination="@id/productsCategoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/productsCategoryFragment"
+        android:name="com.example.shopclothes.presentation.screen.ProductsCategoryFragment"
+        android:label="ProductsCategoryFragment">
+        <argument android:name="@string/categoryID" app:argType="string" android:defaultValue="@null"/>
+        <action
+            android:id="@+id/action_productPageMove"
+            app:destination="@id/productPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productPageFragment"
+        android:name="com.example.shopclothes.presentation.screen.ProductPageFragment"
+        android:label="ProductPageFragment" >
+        <argument
+            android:name="@string/productID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileRootFragment"
+        android:name="com.example.shopclothes.presentation.screen.ProfileRootFragment"
+        android:label="ProfileRootFragment" />
+    <fragment
+        android:id="@+id/addressSelectBottomSheet"
+        android:name="com.example.shopclothes.presentation.sheet.AddressSelectBottomSheet"
+        android:label="AddressSelectBottomSheet" />
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.example.shopclothes.presentation.screen.OrderFragment"
+        android:label="OrderFragment" />
+
+</navigation>

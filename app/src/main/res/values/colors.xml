@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="gradientNormal">#BD5656</color>
+    <color name="buttonColor">#BD5656</color>
+    <color name="backgroundWindowBlack">#0E0E0F</color>
+    <color name="backgroundBottomBarBlack">#14161B</color>
+    <color name="radio_gray">#C7C7CC</color>
+
+</resources>

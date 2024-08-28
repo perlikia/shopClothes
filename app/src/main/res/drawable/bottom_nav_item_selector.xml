@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape android:shape="oval"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:width="10dp" android:height="10dp"/>
+    <stroke android:width="10dp" android:color="@color/white"/>
+
+    <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp"/>
+</shape>
+
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/selected_item_bottom_nav" android:state_checked="true"/>
+    <item android:drawable="@android:color/transparent"/>
+</selector>-->
